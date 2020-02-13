@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+const cli = require("commander");
+const app = require("../index");
+
+cli
+  .version("0.0.1")
+  .requiredOption("-u, --username <username>", "Your account username")
+  .requiredOption("-p, --password <password>", "Your account password")
+  .option(
+    "-t, --timeout <timeout>",
+    "amount of time to wait for completion account password. Defaults to 3600 (5 minutes)"
+  )
+  .option(
+    "-k, --iftttKey <iftttKey>",
+    "IFTTT.com webhook key. Used with the 'iftttEvent' option to dispatch notifications and errors."
+  )
+  .option(
+    "-e, --iftttEvent <iftttEvent>",
+    "IFTTT.com webhook event name. Used to dispatch notifications and errors. https://maker.ifttt.com/trigger/YOUR-EVENT/with/key/YOUR-KEY"
+  )
+  .action(app);
+
+cli.parseAsync(process.argv);
