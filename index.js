@@ -3,6 +3,7 @@ const logger = require("./logger");
 
 module.exports = async options => {
   const circle = new Circle({
+    categoryId: options.categoryId,
     timeout: options.timeout,
     username: options.username,
     password: options.password,

@@ -3,7 +3,7 @@ const wait = require("waait");
 const puppeteer = require("puppeteer");
 const logger = require("./logger");
 
-const COUPONS_URL = "https://circle.target.com/c/household%20supplies/-/27";
+const COUPONS_URL = "https://circle.target.com/c/coupons";
 const LOGIN_URL = "https://circle.target.com/";
 
 class Circle {
@@ -137,7 +137,9 @@ class Circle {
 
     logger.info(`${action.actionName} coupons.`);
 
-    await this.page.goto(COUPONS_URL, { waitUntil: "networkidle2" });
+    await this.page.goto(`${COUPONS_URL}/-/${this.options.categoryId}`, {
+      waitUntil: "networkidle2"
+    });
     await this.page.waitForSelector("#Offer-Grid-Container");
     await this._scrollPage();
 
