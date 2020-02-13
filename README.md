@@ -24,7 +24,7 @@ Known category ids can be found below.
 ## Requirements
 
 - Node 10.15.1 or later.
-- A [Schnucks](https://nourish.schnucks.com/) account
+- A [Circle](https://circle.target.com/) account
 
 ## Install
 
