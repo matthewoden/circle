@@ -4,7 +4,7 @@ A puppeteer script that handles tedium around online coupons at my local "genera
 
 ## Background
 
-This store offers online coupns - up to 60 offers can bbe redeemed. This little script logs in, "clips" every single coupon available in a given category, then exits.
+This store offers online coupns - up to 60 offers can be redeemed. This little script logs in, "clips" every single coupon available in a given category, then exits.
 
 ## Category Ids
 
@@ -43,7 +43,6 @@ git pull && npm ci
 ## Usage
 
 ```
-Usage: circle [options]
 
 Options:
   -V, --version                  output the version number
@@ -52,6 +51,7 @@ Options:
   -c, --categoryId <categoryId>  Category id for circle coupons. See README.md for known categories
   -t, --timeout <timeout>        amount of time to wait for completion account password. Defaults to 3600 (5 minutes)
   -k, --iftttKey <iftttKey>      IFTTT.com webhook key. Used with the 'iftttEvent' option to dispatch notifications and errors.
+                                 Defaults to 'circle'.
   -e, --iftttEvent <iftttEvent>  IFTTT.com webhook event name. Used to dispatch notifications and errors.
                                  https://maker.ifttt.com/trigger/YOUR-EVENT/with/key/YOUR-KEY
   -h, --help                     output usage information

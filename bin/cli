@@ -17,7 +17,7 @@ cli
   )
   .option(
     "-k, --iftttKey <iftttKey>",
-    "IFTTT.com webhook key. Used with the 'iftttEvent' option to dispatch notifications and errors."
+    "IFTTT.com webhook key. Used with the 'iftttEvent' option to dispatch notifications and errors. Defaults to 'circle'."
   )
   .option(
     "-e, --iftttEvent <iftttEvent>",
