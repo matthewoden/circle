@@ -47,9 +47,9 @@ Options:
 
 ```
 # in cron, in docker, or wherever
-schnupons \
-  --username $SCHNUPONS_USERNAME  \
-  --password $SCHNUPONS_PASSWORD  \
+circle \
+  --username $CIRCLE_USERNAME  \
+  --password $CIRCLE_PASSWORD  \
   --timeout 3600  \
   --iftttKey $IFTTT_WEBHOOK_KEY
 ```
