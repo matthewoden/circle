@@ -1,10 +1,10 @@
 # Circle
 
-A puppeteer script that handles tedium around online coupons at my local "general store".
+A puppeteer script that handles tedium around online coupons at target.
 
 ## Background
 
-This store offers online coupns - up to 60 offers can be redeemed. This little script logs in, "clips" every single coupon available in a given category, then exits.
+Target offers 1% cash back and lets you save 60 offers. This little script logs in, "clips" every single coupon available in a given category, then exits. (The scope is limited to a single category because of the offer limit)
 
 ## Category Ids
 
