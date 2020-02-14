@@ -11,7 +11,7 @@ class Circle {
     const defaultOptions = {
       timeout: 3600,
       iftttEvent: "circle",
-      headless: false,
+      headless: true,
       // human-like imperfection
       viewport: { width: 1507, height: 876 },
       // recent-ish version of chrome.
